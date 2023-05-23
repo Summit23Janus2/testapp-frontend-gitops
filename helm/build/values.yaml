@@ -1,0 +1,15 @@
+app:
+  name: testapp-poi-map-app
+  namespace: testapp
+  cluster: .apps.summit23blues.6mbu.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus2/testapp-frontend
+  org: Summit23Janus2
+  name: testapp-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: testapp/poi-map-app
+  tag: latest
